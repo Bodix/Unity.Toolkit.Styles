@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 namespace Toolkit.Styles
 {
+    [AddComponentMenu("Styles/Image Style")]
     [RequireComponent(typeof(Image))]
     public class ImageStyle : GenericGraphicStyle<Image>
     {

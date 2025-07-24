@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Toolkit.Styles
 {
+    [AddComponentMenu("Styles/Text Style")]
     public class TextStyle : StyleComponent<TMP_Text>
     {
         [SerializeField, Expandable]
