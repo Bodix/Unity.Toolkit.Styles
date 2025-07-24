@@ -1,0 +1,16 @@
+{
+    "name": "Toolkit.Styles",
+    "references": [
+        "GUID:9594cbbc1d2461b44a68e886f99de9e4",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
