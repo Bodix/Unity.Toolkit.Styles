@@ -1,0 +1,34 @@
+{
+    "name": "com.evolutex.toolkit.styles",
+    "version": "1.0.0",
+    "displayName": "Toolkit.Styles",
+    "description": "Styles for different Unity components",
+    "unity": "2019.3",
+    "keywords": [
+        "package",
+        "library",
+        "extensions",
+        "utility",
+        "utilities",
+        "utility-library",
+        "utilities-library",
+        "tool",
+        "tools",
+        "toolkit",
+        "scripts",
+        "scripting",
+        "scripts-collection",
+        "productivity",
+        "unity",
+        "unity3d",
+        "unity-development",
+        "asset",
+        "styles",
+        "style"
+    ],
+    "author": {
+        "name": "Bodix",
+        "email": "bodix321@gmail.com",
+        "url": "https://github.com/Bodix/Unity.Toolkit.Styles"
+    }
+}
