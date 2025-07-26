@@ -28,7 +28,7 @@ namespace Toolkit.Styles
 
         protected void UpdateAllStyles()
         {
-            StyleComponent[] styles = FindObjectsOfType<StyleComponent>();
+            StyleComponent[] styles = Resources.FindObjectsOfTypeAll<StyleComponent>();
             foreach (StyleComponent style in styles)
                 style.ApplyStyles();
         }
