@@ -3,34 +3,34 @@ using UnityEngine;
 
 namespace Toolkit.Styles
 {
-    // [CreateAssetMenu(fileName = nameof(ClassName), menuName = "Styles/" + nameof(ClassName), order = 0)]
-    public abstract class Style<TProperty> : ScriptableObject
-    {
-        [SerializeField, OnValueChanged(nameof(UpdateAllStyles))]
-        private TProperty _property;
+	// [CreateAssetMenu(fileName = nameof(ClassName), menuName = "Styles/" + nameof(ClassName), order = 0)]
+	public abstract class Style<TProperty> : ScriptableObject
+	{
+		[SerializeField, OnValueChanged(nameof(UpdateAllStyles))]
+		private TProperty _property;
 
-        public TProperty Property
-        {
-            get => _property;
-            private set
-            {
-                _property = value;
+		public TProperty Property
+		{
+			get => _property;
+			private set
+			{
+				_property = value;
 
-                UpdateAllStyles();
-            }
-        }
-        protected abstract TProperty DefaultProperty { get; }
+				UpdateAllStyles();
+			}
+		}
+		protected abstract TProperty DefaultProperty { get; }
 
-        private void Reset()
-        {
-            Property = DefaultProperty;
-        }
+		private void Reset()
+		{
+			Property = DefaultProperty;
+		}
 
-        protected void UpdateAllStyles()
-        {
-            StyleComponent[] styles = Resources.FindObjectsOfTypeAll<StyleComponent>();
-            foreach (StyleComponent style in styles)
-                style.ApplyStyles();
-        }
-    }
+		protected void UpdateAllStyles()
+		{
+			StyleComponent[] styles = Resources.FindObjectsOfTypeAll<StyleComponent>();
+			foreach (StyleComponent style in styles)
+				style.ApplyStyles();
+		}
+	}
 }
