@@ -6,7 +6,7 @@ using UnityEngine.UI;
 namespace Toolkit.Styles
 {
 	[Serializable]
-	public struct ImageTypeData
+	public struct ImageTypeData : IEquatable<ImageTypeData>
 	{
 		public Image.Type Type;
 		[AllowNesting, ShowIf(nameof(IsSimple))]
