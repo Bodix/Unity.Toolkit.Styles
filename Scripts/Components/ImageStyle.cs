@@ -9,13 +9,23 @@ namespace Toolkit.Styles
 	public class ImageStyle : GenericGraphicStyle<Image>
 	{
 		[SerializeField, Expandable]
+		private ImageSpriteStyle _imageSpriteStyle;
+		[SerializeField, Expandable]
 		private ImageTypeStyle _imageTypeStyle;
 
+		private Sprite _prevSprite;
 		private ImageTypeData _prevImageTypeData;
 
 		public override void ApplyStyles()
 		{
 			base.ApplyStyles();
+
+			if (_imageSpriteStyle && _prevSprite != _imageSpriteStyle.Property)
+			{
+				_prevSprite = _imageSpriteStyle.Property;
+
+				_component.sprite = _imageSpriteStyle.Property;
+			}
 
 			if (_imageTypeStyle && _prevImageTypeData != _imageTypeStyle.Property)
 			{
