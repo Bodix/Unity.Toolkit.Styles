@@ -9,7 +9,7 @@ namespace Toolkit.Styles
 
 		private void OnValidate()
 		{
-			if (!_component)
+			if (!_component || _component.gameObject != gameObject)
 				_component = GetComponent<TComponent>();
 
 			ApplyStyles();
