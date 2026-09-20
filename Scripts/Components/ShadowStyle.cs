@@ -1,4 +1,4 @@
-﻿using PerfectCore.NaughtyAttributes;
+﻿using PerfectCore.PerfectFoundation.NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
